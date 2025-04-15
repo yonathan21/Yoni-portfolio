@@ -1,7 +1,4 @@
-const words = [
-    { text: 'Ideas', imgPath: '/images/ideas.svg' },
-    { text: 'Concepts', imgPath: '/images/concepts.svg' }
-]
+import {words} from "../constants/index.js";
 
 const Hero = () => {
     return (
@@ -22,6 +19,7 @@ const Hero = () => {
                                             <img src={word.imgPath}
                                             alt={word.text}
                                             className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50 "/>
+                                         <span>{word.text}</span>
                                          </span>
                                      ))}
                                  </span>
@@ -30,6 +28,9 @@ const Hero = () => {
                             <h1>into Real Project</h1>
                             <h1>that deliver Results</h1>
                         </div>
+                        <p className="text-white-50 md:text-xl relative z-10">
+                            Hi, I'm Yonathan, a developer based in Ethiopia with a passion for code.
+                        </p>
                     </div>
                 </header>
             </div>
