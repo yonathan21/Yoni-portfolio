@@ -1,0 +1,25 @@
+import React from 'react'
+import {Environment, Float, useGLTF} from "@react-three/drei";
+import {Canvas} from "@react-three/fiber";
+
+const TechIcons = ({ model}) => {
+
+    const scene = useGLTF(model.modelPath);
+
+    return (
+        <Canvas>
+            <ambientLight intensity={0.4}/>
+            <directionalLight position={[5,5,5]} intensity={1}/>
+            <orbitControls enableZoom={false} />
+
+            <Environment preset = "city" />
+
+            <Float speed={5.5} rotationIntensity={0.5} floatIntensity={0.9}>
+                <group scale={model.scale} rotation={model.rotation}>
+                    <primitive object={scene.scene} />
+                </group>
+            </Float>
+        </Canvas>
+    )
+}
+export default TechIcons
