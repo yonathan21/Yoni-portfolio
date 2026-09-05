@@ -6,6 +6,7 @@ import FeatureCards from "./sections/FeatureCards.jsx";
 import Expreince from "./sections/Expreince.jsx";
 import Testimonials from "./sections/Testimonials.jsx";
 import Contact from "./sections/Contact.jsx";
+import TechStack from "./sections/TechStack.jsx";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
          <Logosection/>
          <FeatureCards />
          <Expreince />
+         <TechStack />
          <Testimonials />
          <Contact />
        </>
