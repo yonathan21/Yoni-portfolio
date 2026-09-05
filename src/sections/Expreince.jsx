@@ -3,7 +3,7 @@ import {expCards} from "../constants/index.js";
 import GlowCard from "../components/GlowCard.jsx";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/scrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
